@@ -1,6 +1,7 @@
 package br.com.digitalhouse;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Curso {
     private String nome;
@@ -69,9 +70,34 @@ public class Curso {
         this.codigoCurso = codigoCurso;
     }
 
-    private boolean mesmoAluno() {
+    private boolean mesmoAluno(Aluno umAluno) {
         if (codigoCurso == codigoCurso)
             System.out.println("Mesmo Curso!");
         return true;
     }
+
+    //tentativa criar metodo add aluno//
+
+    public void adicionarUmAluno(List<Aluno> umAluno, Integer codA) {
+        List<Aluno> alunosCurso = new ArrayList<>();
+        for (Aluno umAluno : alunosCurso) {
+            if (umAluno.getNome() && umAluno.getSobreNome() && umAluno.getCodA() != codA &&  !=nome && !=codA){
+                umAluno.add(alunosCurso);
+                return true;
+            }
+            System.out.println("Aluno adicionado!");
+
+        }
+
+        public void excluirAluno (List < Aluno > umAluno) {
+            List<Aluno> alunosEx = new ArrayList<>();
+            for (Aluno alunoEx : alunosCurso)
+                if
+        }
+        System.out.println("Aluno removido!");
+
+
+    }
+
+
 }

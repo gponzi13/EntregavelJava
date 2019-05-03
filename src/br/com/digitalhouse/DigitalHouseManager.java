@@ -1,6 +1,7 @@
 package br.com.digitalhouse;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DigitalHouseManager {
     private ArrayList<Aluno> listaAlunos;
@@ -39,5 +40,28 @@ public class DigitalHouseManager {
         this.listaProfessores = listaProfessores;
         this.listaDeMatriculas = listaDeMatriculas;
     }
-    
+
+    public void registrarCurso(String nome, Integer codigoCurso, Integer qtdMaxAluno) {
+        ArrayList listaDeCursos = new ArrayList();
+        for (Curso novoCurso : listaDeCursos) {
+            if (novoCurso.getNome() && novoCurso.getQtdMaxAluno() && novoCurso.getCodigoCurso()) {
+                novoCurso.add(novoCurso);
+            }
+        }
+
+    }
+
+    public void exluirCurso(Integer codigoCurso) {
+        for (Curso exCurso : codigoCurso) {
+            if (exCurso.getCodigoCurso()) {
+                exCurso.remove;
+            }
+
+        }
+    }
+    public void registrarProfessorAdjunto(String nome, String sobreNome, Integer quantidadeDeHoras){
+        List<Professor> listaDePreofessores = new ArrayList<>();
+
+    }
+
 }
